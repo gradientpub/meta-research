@@ -10,6 +10,7 @@ A set of tools to better understand how AI research is done
 
 ### Architecture
 
+- Bespoke scraping tools to be Python scripts (for dynamic typing).
 - Core API to be written in Rust / OCaml.
 - Python frontends to make it usable for researchers.
 - Frontend in ClojureScript.
