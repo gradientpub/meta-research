@@ -244,6 +244,7 @@ elif conference in ['colt', 'aistats', 'icml']:
 for paper in res:
     paper['pdf_link'] = quote(paper['pdf_link'])
 
+if not os.path.exists("data"): os.mkdir("data")
 json.dump(res, open(f'data/{conference}_{year}.json', 'w'),
           sort_keys=True, indent=2)
 print(f"Downloaded {len(res)} papers")
