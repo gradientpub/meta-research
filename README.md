@@ -5,12 +5,6 @@ A set of tools to better understand how AI research is done
 ### Capabilities
 - Download papers/titles/pdfs from top ML conferences in easily usable format.
 
-### Todo
-
-- Integrate ICML / NIPS data sources into a robust script.  (Inspired by @dcharrezt's work.)
-- Create a more consistent API that can be used across venues.
-- Integrate this all into a user-friendly web-frontend.
-
 ### How to use (for one conference)
 1. Download all the paper titles/authors/links to pdfs: python conference_downloader.py {icml/emnlp/cvpr/...} {year}
 2. Actually download the pdfs: python download_pdfs.py data/{json file}
@@ -29,10 +23,3 @@ A set of tools to better understand how AI research is done
 
 ### Utilities
 1. Clean up pdfs that aren't in any json files: python verify_pdfs.py
-
-### Architecture
-
-- Bespoke scraping tools to be Python scripts (for dynamic typing).
-- Core API to be written in Rust / OCaml.
-- Python frontends to make it usable for researchers.
-- Frontend in ClojureScript.
